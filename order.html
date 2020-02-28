@@ -60,7 +60,7 @@
         </div>
         <div class="row">
           <div class="col-md-6" id="toppings">
-            <h3>CHOOSE YOUR TOPPINGS</h3>
+            <h3>CHOOSE YOUR TOPPINGS:</h3>
             <form id="top">
               <input type="checkbox" id="topping1">
               <label for="topping1"> Pepperoni</label><br />
@@ -74,12 +74,27 @@
               <label for="topping5">Sweetcorn </label><br />
               <input type="checkbox" id="topping6" >
               <label for="topping6">Mushroom</label><br />
-              <span class="btn btn-danger" id="another">Another Order</span>
-            <button type="submit" class="btn btn-success">Make Order</button>
             </form>
           </div>
-          <div class="col-md-6">
-
+          <div class="col-md-6" id="btn">
+            <h3>How will it be availed to you :</h3>
+            <div class="radio">
+              <input type="radio" value="Delivered">
+              <label>Delivered</label>
+            </div>
+            <div class="radio">
+              <input type="radio" value="Collected">
+              <label>Collected</label>
+            </div>
+            <div class="submit">
+              <span class="btn btn-danger" id="another">Another Order</span>
+              <button type="submit" class="btn btn-success">Make Order</button>
+            </div>
+            <div id="show-order">
+              <ul id="order">
+                
+              </ul>
+            </div>
           </div>
         </div>
       </div>
