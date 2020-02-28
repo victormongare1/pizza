@@ -1,14 +1,25 @@
+
 .intro{
-  background-image: url(/img/photo-1513104890138-7c749659a591.jpeg);
   font-size: 50px;
   text-align: center;
-  height: 600px;
+  height: 650px;
   color: white;
+  font-family: 'Trade winds';
+  padding-top: 70px;
+  background-image: url(/img/photo-1513104890138-7c749659a591.jpeg);
 }
 h1{
-  font-size: 70px;
+  font-size: 100px;
+  font-family: 'Akronim';
 }
 li{
   display: block;
   font-size: 30px;
+}
+h2{
+  text-align: center;
+}
+.offers{
+  height: 650px;
+  font-family: 'Yeon Sung',;
 }
