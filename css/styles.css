@@ -1,0 +1,14 @@
+.intro{
+  background-image: url(/img/photo-1513104890138-7c749659a591.jpeg);
+  font-size: 50px;
+  text-align: center;
+  height: 600px;
+  color: white;
+}
+h1{
+  font-size: 70px;
+}
+li{
+  display: block;
+  font-size: 30px;
+}
