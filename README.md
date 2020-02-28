@@ -1,6 +1,6 @@
-# {Pizza-palace}
-#### {A website for Pizza-palace}, {2020 version}
-#### By **{Victor Mongare}**
+# Pizza-palace
+#### A website for Pizza-palace, {2020 version}
+#### By Victor Mongare
 ## Description
 This is a website for Pizza-palace, a chain of restraunts found in major cities in Kenya.
 It provides information about Pizza-palace including what its all about and the menu of food
