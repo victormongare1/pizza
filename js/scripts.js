@@ -12,8 +12,7 @@ $(document).ready(function() {
   var address=prompt("Enter your Address :");
   alert("Your order has been received and will be delivered to you in " + address)
   });
-  $("button#another").click(function(event) {
-    event.preventDefault();
+  $("button#another").click(function() {
     (".size").append('<select class="form-control" id="size">'+
                       '<option>Large</option>'+
                       '<option>Medium</option>'+
