@@ -5,11 +5,11 @@
   height: 650px;
   color: white;
   font-family: 'Trade winds';
-  padding-top: 40px;
+  padding-top: 0px;
   background-image: url(/img/photo-1513104890138-7c749659a591.jpeg);
 }
 h1{
-  font-size: 150px;
+  font-size: 100px;
   font-family: 'Akronim';
 }
 li{
@@ -19,25 +19,27 @@ li{
 h2{
   text-align: center;
 }
-.offers{
-  height: 650px;
-  font-family: 'Yeon Sung',;
-}
 .order{
   text-align: center;
+  background-color: yellow;
+  padding-top: 30px;
 }
 #top{
   float: left;
 }
 #toppings{
-  padding-top: 100px;
-  text-align: end;
+  padding-top: 0px;
+  text-align: center;
 }
-
 #btn{
-  padding-top: 100px;
+  padding-top: 20px;
 }
 .submit{
-  padding-top: 30px;
+  padding-top: 20px;
 }
-
+body{
+  background-color: crimson;
+}
+.about{
+  text-align: center;
+}

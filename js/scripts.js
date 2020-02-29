@@ -7,8 +7,9 @@ function pizza (size, crust, toppings) {
 
 //user-interface
 $(document).ready(function() {
-  $("form#top").submit(function(event) {
+  $("button#make-order").click(function(event) {
     event.preventDefault();
-  alert("Your order has been received")
+  var address=prompt("Enter your Address :")
+  alert("Your order has been received and will be delivered to you in " + address)
   })
 })
