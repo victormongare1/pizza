@@ -1,21 +1,24 @@
 //business-logic
-function pizza (size, crust, toppings) {
+function pizza (size, crust, top1, top2) {
   this.size = size;
   this.crust = crust;
-  this.toppings = [];
+  this.top1= top1;
+  this.top2= top2;
 }
+
 pizza.prototype.fullOrder= function() {
-  return this.size + " " +this.crust ;
+  return "You ordered a " + this.size + " " +this.crust +" pizza with " + this.top1 + " and " + this.top2;
 }
+
 //user-interface
 $(document).ready(function() {
-  $("button#another").click(function(event) {
-    event.preventDefault();
-    ("#pizza-size").append('<select class="form-control" id="size">'+
-                            '<option>Large</option>'+
-                            '<option>Medium</option>'+
-                            '<option>Small</option>'+
-                            '</select>'
+  $("button#another").click(function() {
+    alert("f");
+    ("#size").append( '<select class="form-control" id="size">'+
+                      '<option>Large</option>'+
+                      '<option>Medium</option>'+
+                      '<option>Small</option>'
+                      
                           );
         
     (".crust").append( '<select class="form-control" id="crust">'+
@@ -24,32 +27,28 @@ $(document).ready(function() {
                   '<option>Cheese-stuffed</option>'+
                   '</select>'
                   );
-    (".top").append('<form id="top">'+
-                    '<input type="checkbox" id="topping1">'+
-                    '<label for="topping1"> Pepperoni</label><br />'+
-                    '<input type="checkbox" id="topping2">'+
-                    '<label for="topping2"> Pineapple</label><br />'+
-                    '<input type="checkbox" id="topping3" >'+
-                    '<label for="topping3"> Beefstripe</label><br />'+
-                    '<input type="checkbox" id="topping4" >'+
-                    '<label for="topping4">Cheesetop</label><br />'+
-                    '<input type="checkbox" id="topping5" >'+
-                    '<label for="topping5">Sweetcorn </label><br />'+
-                    '<input type="checkbox" id="topping6" >'+
-                    '<label for="topping6">Mushroom</label><br />'+
-                    '</form>'
-                    );
+    
   });
-  $("button#make-order").click(function(event) {
+  $("button#deliver").click(function(event) {
     event.preventDefault();
-  var size=$("#size").val();
-  var crust=$("#crust").val();
-  var newOrder= new pizza (size , crust)
-  var top=$("input:checkbox[name=top]:checked").val();
-   newOrder.toppings.push(top)
-  var address=prompt("Enter your Address :");
-  alert("Your order has been received and will be delivered to you in " + address)
-  
-  $("ul#customer-order").append("<li><span class=order>" + newOrder.fullOrder()  + "</span></li>");
+    var address=prompt("Enter your Address :");
+    alert("Your order has been received and will be delivered to you in " + address)    
+    var size=$("#size").val();
+    var crust=$("#crust").val();
+    var top1=$("#top1").val();
+    var top2=$("#top2").val();
+    var newOrder= new pizza (size , crust, top1, top2)
+    
+    $("ul#customer-order").append("<li><span class=order>" + newOrder.fullOrder() + "Delivered(sh.100)" + "</span></li>");
   });
+    $("button#make-order").click(function(event) {
+      event.preventDefault();
+      var size=$("#size").val();
+      var crust=$("#crust").val();
+      var top1=$("#top1").val();
+      var top2=$("#top2").val();
+      var newOrder= new pizza (size , crust, top1, top2)
+      
+      $("ul#customer-order").append("<li><span class=order>" + newOrder.fullOrder() + "</span></li>"); 
+    })
 })

@@ -4,7 +4,7 @@
     <title>PIZZA PALACE</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="fonts" rel="stylesheet">
+    <link href="fonts/" rel="stylesheet">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
@@ -59,51 +59,45 @@
                 <option>Cheese-stuffed(sh.100)</option>
               </select>
             </div>
-            <div class="crust"></div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6" id="toppings">
             <h3>CHOOSE YOUR TOPPINGS:</h3>
             <div class="top">
-              <form id="top">
-                <input type="checkbox" id="topping1" name="top">
-                <label for="topping1"> Pepperoni(sh.200)</label><br />
-                <input type="checkbox" id="topping2" name="top">
-                <label for="topping2"> Pineapple(sh.200)</label><br />
-                <input type="checkbox" id="topping3" name="top">
-                <label for="topping3"> Beefstripe(sh.200)</label><br />
-                <input type="checkbox" id="topping4" name="top">
-                <label for="topping4">Cheesetop(sh200)</label><br />
-                <input type="checkbox" id="topping5" name="top">
-                <label for="topping5">Sweetcorn(sh.200) </label><br />
-                <input type="checkbox" id="topping6" name="top">
-                <label for="topping6">Mushroom(sh.200)</label><br />
-              </form>
+              <h4>toppings 1</h4>
+              <select class="form-control" id="top1">
+                <option>beef stripes(sh.200)</option>
+                <option>chicken cubes(sh.200)</option>
+                <option>pepperoni(sh.200)</option>
+              </select>
+              <h4>toppings2</h4>
+              <select class="form-control" id="top2">
+                <option>cheese layer(sh.200)</option>
+                <option>pineapples(sh.200)</option>
+                <option>sweet corn(sh.200)</option>
+              </select>
             </div>
           </div>
           <div class="col-md-6" id="btn">
             <h3>How will it be availed to you :</h3>
-            <div class="radio">
-              <input type="radio" value="Delivered">
-              <label>Delivered(extra ksh.100)</label>
-            </div>
-            <div class="radio">
-              <input type="radio" value="Collected">
-              <label>Collected</label>
-            </div>
+            <ul id="pick">
+              <li>Delivered(sh.100)</li>
+              <li>Collected</li>
+            </ul>
             <div class="submit">
-              <span class="btn btn-danger" id="another">Another Order</span>
-              <button type="submit" class="btn btn-success" id="make-order">Make Order</button>
+              <button type="submit" class="btn btn-danger" id="another">Another Order</button>
+              <button type="submit" class="btn btn-success" id="make-order">Collect</button>
+              <button type="submit" class="btn btn-primary" id="deliver">Delivery</button>
             </div>
           </div>
-            <div id="show-order">
-              <ul id="customer-order">
-
-              </ul>
-            </div>
         </div>
       </div>
     </div>
+      <div id="show-order">
+        <ul id="customer-order">
+
+        </ul>
+      </div>
   </body>
 </html>
