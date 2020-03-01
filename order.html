@@ -42,7 +42,7 @@
         <div class="row">
           <div class="col-md-6">
             <h3>PIZZA SIZE:</h3>
-            <div class="size">
+            <div id="pizza-size">
               <select class="form-control" id="size">
                 <option>Large(sh.800)</option>
                 <option>Medium(sh.600)</option>
@@ -59,6 +59,7 @@
                 <option>Cheese-stuffed(sh.100)</option>
               </select>
             </div>
+            <div class="crust"></div>
           </div>
         </div>
         <div class="row">
@@ -66,17 +67,17 @@
             <h3>CHOOSE YOUR TOPPINGS:</h3>
             <div class="top">
               <form id="top">
-                <input type="checkbox" id="topping1">
+                <input type="checkbox" id="topping1" name="top">
                 <label for="topping1"> Pepperoni(sh.200)</label><br />
-                <input type="checkbox" id="topping2">
+                <input type="checkbox" id="topping2" name="top">
                 <label for="topping2"> Pineapple(sh.200)</label><br />
-                <input type="checkbox" id="topping3" >
+                <input type="checkbox" id="topping3" name="top">
                 <label for="topping3"> Beefstripe(sh.200)</label><br />
-                <input type="checkbox" id="topping4" >
+                <input type="checkbox" id="topping4" name="top">
                 <label for="topping4">Cheesetop(sh200)</label><br />
-                <input type="checkbox" id="topping5" >
+                <input type="checkbox" id="topping5" name="top">
                 <label for="topping5">Sweetcorn(sh.200) </label><br />
-                <input type="checkbox" id="topping6" >
+                <input type="checkbox" id="topping6" name="top">
                 <label for="topping6">Mushroom(sh.200)</label><br />
               </form>
             </div>
@@ -92,15 +93,15 @@
               <label>Collected</label>
             </div>
             <div class="submit">
-              <button type="submit" class="btn btn-danger" id="another">Another Order</button>
+              <span class="btn btn-danger" id="another">Another Order</span>
               <button type="submit" class="btn btn-success" id="make-order">Make Order</button>
             </div>
+          </div>
             <div id="show-order">
               <ul id="customer-order">
 
               </ul>
             </div>
-          </div>
         </div>
       </div>
     </div>
