@@ -13,7 +13,6 @@ pizza.prototype.fullOrder= function() {
 //user-interface
 $(document).ready(function() {
   $("button#another").click(function() {
-    alert("f");
     ("div#size").append( '<select class="form-control" id="size">'+
                       '<option>Large</option>'+
                       '<option>Medium</option>'+
@@ -27,8 +26,19 @@ $(document).ready(function() {
                   '<option>Cheese-stuffed</option>'+
                   '</select>'
                   );
-    
-  });
+    (".top").append('<h4>toppings 1</h4>'+
+                    '<select class="form-control" id="top1">'+
+                    '<option>beef stripes(sh.200)</option>'+
+                    '<option>chicken cubes(sh.200)</option>'+
+                    '<option>pepperoni(sh.200)</option>'+
+                    '</select>'+
+                    '<h4>toppings2</h4>'+
+                    '<select class="form-control" id="top2">'+
+                    '<option>cheese layer(sh.200)</option>'+
+                    '<option>pineapples(sh.200)</option>'+
+                   ' <option>sweet corn(sh.200)</option>'+
+                  '</select>')
+    });
   $("button#deliver").click(function(event) {
     event.preventDefault();
     var address=prompt("Enter your Address :");
