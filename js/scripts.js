@@ -14,11 +14,11 @@ pizza.prototype.fullOrder= function() {
 $(document).ready(function() {
   $("button#another").click(function() {
     alert("f");
-    ("#size").append( '<select class="form-control" id="size">'+
+    ("div#size").append( '<select class="form-control" id="size">'+
                       '<option>Large</option>'+
                       '<option>Medium</option>'+
-                      '<option>Small</option>'
-                      
+                      '<option>Small</option>'+
+                      '</select>'
                           );
         
     (".crust").append( '<select class="form-control" id="crust">'+
