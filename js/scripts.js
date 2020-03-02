@@ -13,20 +13,20 @@ pizza.prototype.fullOrder= function() {
 //user-interface
 $(document).ready(function() {
   $("button#another").click(function() {
-    ("div#size").append( '<select class="form-control" id="size">'+
-                      '<option>Large</option>'+
-                      '<option>Medium</option>'+
-                      '<option>Small</option>'+
+   $(".size").append( '<select class="form-control" id="size">'+
+                      '<option>Large(sh.800)</option>'+
+                      '<option>Medium(sh.600)</option>'+
+                      '<option>Small(sh.400)</option>'+
                       '</select>'
                           );
         
-    (".crust").append( '<select class="form-control" id="crust">'+
-                  '<option>Thin</option>'+
-                  '<option>Deep</option>'+
-                  '<option>Cheese-stuffed</option>'+
+   $(".crust").append( '<select class="form-control" id="crust">'+
+                  '<option>Thin(sh.100)</option>'+
+                  '<option>Deep(sh.100)</option>'+
+                  '<option>Cheese-stuffed(sh.200)</option>'+
                   '</select>'
                   );
-    (".top").append('<h4>toppings 1</h4>'+
+    $(".top").append('<h4>toppings 1</h4>'+
                     '<select class="form-control" id="top1">'+
                     '<option>beef stripes(sh.200)</option>'+
                     '<option>chicken cubes(sh.200)</option>'+
